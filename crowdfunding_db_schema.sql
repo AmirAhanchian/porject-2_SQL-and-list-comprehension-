@@ -1,12 +1,11 @@
 -- dropping tables and database incase of previous generation of the same table, mostly used druing coding to avoid errors
-DROP DATABASE IF EXISTS crowdfunding_db;
+
 DROP Table if exists "category" CASCADE;
 DROP Table if exists "subcategory" CASCADE;
 DROP Table if exists "campaign" CASCADE;
 DROP Table if exists "contacts";
 
-Create Database crowdfunding_db;
-
+-- created tables that were needed
 CREATE TABLE "category" (
     "category_id" varchar(10)   NOT NULL,
     "category" varchar(20)   NOT NULL,
